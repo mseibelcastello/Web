@@ -192,6 +192,21 @@ main {
     background: linear-gradient(to right, #011d7a, #768ace);;
 }
 
+.nav_costa {
+    background: linear-gradient(to right, #fe0000,#bb7f7f);;
+}
+
+.nav_fco {
+    background: linear-gradient(to right, #005f33, #8fceb0);;
+}
+
+.nav_independiente {
+    background: linear-gradient(to right, #fe0000,#bb7f7f);;
+}
+
+.nav_pfc {
+    background: linear-gradient(to right, black, rgb(121, 117, 117));;
+}
 
 
 .nav-interno a {
