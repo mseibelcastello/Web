@@ -47,6 +47,26 @@ nav a {
     font-weight: bold;
     color: white;
     text-transform: uppercase;
+
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+
+
+nav a:hover {
+    background-color: white;
+    color: #1da081;
+    transform: translateX(8px);
+}
+
+nav a.activo {
+    background-color: white;
+    color: #1da081;
+    transform: translateX(8px);
 }
 
 /*----------------------------------*/
@@ -124,7 +144,6 @@ main {
 }
 
 .nav-interno {
-    background-color: grey;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -166,4 +185,26 @@ main {
 
 .bloque-interno:target {
     display: block;
+}
+
+
+.nav_cayca {
+    background: linear-gradient(to right, #011d7a, #768ace);;
+}
+
+
+
+.nav-interno a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-interno a:hover,
+.nav-interno a.activo {
+    background-color: white;
+    color: black;
+    transform: translateX(8px);
 }
