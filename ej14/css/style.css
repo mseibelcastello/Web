@@ -146,7 +146,7 @@ main {
 .nav-interno {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     min-height: 100%;
     gap: 10px;
     width: 300px;
