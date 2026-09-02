@@ -223,3 +223,25 @@ main {
     color: black;
     transform: translateX(8px);
 }
+
+
+figcaption {
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    gap: 30px;
+}
+
+
+.about div {
+    flex: 1;
+}
+
+.about p{
+    text-align: center;
+}
