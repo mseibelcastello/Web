@@ -189,7 +189,7 @@ main {
 
 
 .nav_cayca {
-    background: linear-gradient(to right, #011d7a75, #768ace);;
+    background: linear-gradient(to right, #011d7a, #768ace);;
 }
 
 
@@ -205,6 +205,6 @@ main {
 .nav-interno a:hover,
 .nav-interno a.activo {
     background-color: white;
-    color: #1da081;
+    color: black;
     transform: translateX(8px);
 }
