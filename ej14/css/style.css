@@ -245,3 +245,85 @@ figcaption {
 .about p{
     text-align: center;
 }
+
+
+
+ /*DISCIPLINAS*/ 
+ .disciplinas { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+    margin: 30px 5%;
+ } 
+    .disciplina { 
+        background-color: #f2f2f2; 
+        border-radius: 15px; 
+        padding: 20px; 
+        text-align: center; 
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); 
+    } 
+    .disciplina img { 
+        width: 100px; 
+        height: 100px; 
+        object-fit: contain; 
+    } 
+    .disciplina h2 { 
+        font-family: "Anton", sans-serif; 
+        margin: 10px; 
+    } 
+    .disciplina p { 
+        text-align: center; 
+        margin: 10px; 
+        font-size: 18px; 
+    } 
+    .disciplina ul { 
+        list-style: none; 
+        padding: 0; 
+        font-family: Arial, Helvetica, sans-serif; 
+    } 
+    .disciplina li { 
+        margin: 5px; 
+    } 
+    .disciplina a { 
+        display: inline-block; 
+        margin-top: 10px; 
+        padding: 10px 15px; 
+        background-color: #011d7a; 
+        color: white; 
+        text-decoration: none; 
+        border-radius: 8px; 
+        font-family: Arial, Helvetica, sans-serif; 
+        transition: 0.3s; 
+    } 
+    .disciplina a:hover { 
+        background-color: #768ace; 
+        transform: scale(1.05); 
+    }
+
+    
+     /*TABLAS DE HORARIOS*/ 
+    .bloque-interno { 
+        display: none; 
+        margin: 40px 5%; 
+    } 
+    .bloque-interno:target { 
+        display: block; 
+    } 
+    .bloque-interno h2 { 
+        font-family: "Anton", sans-serif; 
+        font-size: 35px; 
+    } 
+    .bloque-interno table { 
+        width: 100%; 
+        border-collapse: collapse; 
+        font-family: Arial, Helvetica, sans-serif; 
+    } 
+    .bloque-interno th, .bloque-interno td { 
+        padding: 15px; 
+        border: 1px solid #ccc; 
+        text-align: center; 
+    } 
+    .bloque-interno th { 
+        background-color: #011d7a; 
+        color: white; 
+    }
