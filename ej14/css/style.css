@@ -249,6 +249,34 @@ figcaption {
 
 
  /*DISCIPLINAS*/ 
+/*declaro variables para cada club, con los colores de cada uno*/
+.club-cayca {
+    --color-principal: #011d7a;
+    --color-secundario: #768ace;
+}
+
+.club-costa {
+    --color-principal: #fe0000;
+    --color-secundario: #bb7f7f;
+}
+
+.club-fco {
+    --color-principal: #005f33;
+    --color-secundario: #8fceb0;
+}
+
+.club-independiente {
+    --color-principal: #fe0000;
+    --color-secundario: #bb7f7f;
+}
+
+.club-pfc {
+    --color-principal: black;
+    --color-secundario: rgb(121, 117, 117);
+}
+
+
+
  .disciplinas { 
     display: grid; 
     grid-template-columns: repeat(2, 1fr); 
@@ -284,21 +312,23 @@ figcaption {
     .disciplina li { 
         margin: 5px; 
     } 
-    .disciplina a { 
-        display: inline-block; 
-        margin-top: 10px; 
-        padding: 10px 15px; 
-        background-color: #011d7a; 
-        color: white; 
-        text-decoration: none; 
-        border-radius: 8px; 
-        font-family: Arial, Helvetica, sans-serif; 
-        transition: 0.3s; 
-    } 
-    .disciplina a:hover { 
-        background-color: #768ace; 
-        transform: scale(1.05); 
-    }
+
+    .disciplina a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: var(--color-principal);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+
+.disciplina a:hover {
+    background-color: var(--color-secundario);
+    transform: scale(1.05);
+}
 
     
      /*TABLAS DE HORARIOS*/ 
@@ -323,7 +353,7 @@ figcaption {
         border: 1px solid #ccc; 
         text-align: center; 
     } 
-    .bloque-interno th { 
-        background-color: #011d7a; 
-        color: white; 
-    }
+    .bloque-interno th {
+    background-color: var(--color-principal);
+    color: white;
+}
