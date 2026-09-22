@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo contactaré en breve</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<div class="contenedor">
+    <h1>Gracias por contactarme</h1>
+    <p>Su consulta fue recibida. Lo contactaré en breve.</p>
+
+    <p><strong>Han pasado:</strong></p>
+    <div id="contador">Calculando...</div>
+
+    <a class="btn" href="ej15.html">Volver al currículum</a>
+</div>
+
+<script>
+    const inicio = new Date("2023-07-01T00:00:00");
+
+    function actualizarContador() {
+        const ahora = new Date();
+        let totalSegundos = Math.floor((ahora - inicio) / 1000);
+        if (totalSegundos < 0) totalSegundos = 0;
+
+        const dias = Math.floor(totalSegundos / 86400);
+        const horas = Math.floor((totalSegundos % 86400) / 3600);
+        const minutos = Math.floor((totalSegundos % 3600) / 60);
+        const segundos = totalSegundos % 60;
+
+        document.getElementById("contador").textContent =
+            dias + " días, " + horas + " horas, " + minutos + " minutos y " + segundos + " segundos";
+    }
+
+    actualizarContador();
+    setInterval(actualizarContador, 1000);
+</script>
+
+</body>
+</html>

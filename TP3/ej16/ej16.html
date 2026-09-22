@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Validador de CUIT/CUIL</title>
+    <link rel="stylesheet" href="estiloEj16.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Validador de CUIT/CUIL</h1>
+        <label for="cuit">Ingrese su CUIT/CUIL:</label>
+        <input type="text" id="cuit" placeholder="xx-xxxxxxxx-x">
+        <button onclick="validarCUIL()">Validar</button>
+        <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+    <!-- pedir cuit
+    separar/limpiar el numero
+    obtener los 10 primeros digitos
+    obtener el digito verificador ingresado
+    multplicar los primeros 10 digitos por 5,4,3,2,7,6,5,4,3,2
+    sumar los resultados
+    hacer resultado modulo 11
+    11 - resultado
+    comparar con el ultimo digito ingresado
+    si da 11, cambiar el tipo a 23 o 33 y volver a calcular, si da 11 el digito verificador es 0 -->
