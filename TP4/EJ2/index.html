@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TURNERO ALEATORIO</title>
+    <link rel="stylesheet" href="materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" class="brand-logo center"><i class="material-icons">casino</i> Turnero aleatorio</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title"><i class="material-icons left">settings</i> Configuracion</span>
+                <div class="row">
+                    <div class="col s6">
+                        <div class="input-field">
+                            <input id="minimo" type="number" class="validate">
+                            <label class="active" for="minimo">Limite minimo</label>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="input-field">
+                            <input id="maximo" type="number" class="validate">
+                            <label class="active" for="maximo">Limite maximo</label>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" onclick="guardar_configuracion()">
+                    <i class="material-icons left">save</i> Guardar
+                </button>
+                <button class="btn waves-effect waves-light" onclick="leer_limites()">
+                    <i class="material-icons left">visibility</i> Ver
+                </button>
+                <button class="btn waves-effect waves-light" onclick="reset_configuracion()">
+                    <i class="material-icons left">delete</i> Resetear
+                </button>
+                <div id="datos"></div>
+            </div>
+        </div>
+
+        <div class="card center-align">
+            <div class="card-content">
+                <span class="card-title">Numero generado</span>
+                <div id="num_random">--</div>
+                <button class="btn waves-effect waves-light" onclick="generar_numero()">
+                    <i class="material-icons left">casino</i> Generar numero
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title"><i class="material-icons left">list_alt</i> Numeros generados</span>
+                <div id="numeros" class="center-align"></div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">Trabajo Practico 4 - Ejercicio 2 - PERALTA Damaris, SEIBEL Micaela</div>
+        </div>
+    </footer>
+</body>
+
+</html>

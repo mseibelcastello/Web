@@ -1,0 +1,12 @@
+{
+    "minimo": 1,
+    "maximo": 12,
+    "numeros": [
+        {
+            "numero": 0
+        },
+        {
+            "numero": 3
+        }
+    ]
+}
