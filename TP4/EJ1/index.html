@@ -8,23 +8,30 @@
     <link rel="stylesheet" href="1estilo.css">
     </head>
 
+    <!--p → padding (espacio interno)
+        y → eje vertical, es decir, arriba y abajo
+        5 → cantidad de espacio-->
     <body class="py-5 d-flex flex-column align-items-center">
+        <!--los elementos hijos del body quedan centrados horizontalmente.-->
         <div class="container" style="max-width: 650px;">            
 
 
                 <!--Titulo-->
                 <div class = "text-center mb-4">
                     <h1 class ="titulo-principal display-5">Adivina el número</h1>
-                    <p class="text-light-50 fs-6">
-                        Encuentra el número secreto entre <strong>1 y 1000</strong></p>
+                    <!--"display-5 es una clase de bootstrap para crear títulos grandes y llamativos."-->
+                    <p class="fs-6"> <!--fs-6 tamanio letra-->
+                        Encuentra el número secreto entre <strong>1</strong> y <strong>1000</strong></p>
                 </div> 
 
                 <!-- Panel de Estadísticas -->
-                <div class="row text-center mb-4 g-2">
+                <div class="row text-center mb-4 g-2"> <!--g-2 espacio e/ columnas y filas del grid-->
                 <div class="col-6 col-md-3"> 
+                    <!--Bootstrap trabaja con 12 columnas. col-6 = 6/12 y col-md-3 = 3/12 desde md en adelante-->
                     <div class="stat-card"> 
                         <small  class="text-uppercase text-secondary fw-bold" style="font-size: 0.75rem;">Intentos</small> 
                         <h3 id="stat-intentos" class="mb-0 text-info fw-bold">0</h3>
+                        <!--mb-0 elimina el margen inferior predeterminado del <h3>-->
                     </div>
                 </div>
             <div class="col-6 col-md-3">

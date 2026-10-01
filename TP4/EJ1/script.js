@@ -29,8 +29,6 @@ function procesarIntento(event) {
     let input = document.getElementById("input-numero");
     let numeroIngresado = Number(input.value);
 
-
-    // Contar intento
     intentos++;
 
     document.getElementById("stat-intentos").textContent = intentos;
@@ -53,10 +51,8 @@ function procesarIntento(event) {
         partidaTerminada = true;
 
         document.getElementById("mensaje-pista").textContent =
-            "🎉 ¡Felicitaciones! ¡Adivinaste el número!";
+            "¡Felicitaciones! ¡Adivinaste el número!";
 
-
-        // Aumentar cantidad de partidas finalizadas
         partidasFinalizadas++;
 
         document.getElementById("stat-partidas").textContent =
