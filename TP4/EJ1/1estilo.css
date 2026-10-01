@@ -1,0 +1,167 @@
+:root {
+    /* En CSS el prefijo -- 
+    indica que estoy declarando una propiedad 
+    personalizada (custom property), es decir, una variable de CSS. */
+
+    --color-fondo: #1e1e2f;
+    --color-fondo-secundario: #2a2a40;
+    --color-tarjeta: #27293d;
+
+    --color-borde: #3d3f58;
+
+    --color-texto: #f1f1f1;
+    --color-texto-suave: #d5dade;
+    --color-texto-secundario: #8b8fa8;
+
+    --color-acento: #0dcaf0;
+
+    --color-exito: #28a745;
+    --color-advertencia: #ffc107;
+    --color-peligro: #dc3545;
+
+    --sombra-tarjeta: rgba(0, 0, 0, 0.35);
+    --sombra-suave: rgba(0, 0, 0, 0.25);
+
+:root {
+     /* :root en CSS es un selector especial que apunta al elemento raíz del documento HTML.
+     Variables disponibles para todo el proyecto */
+
+    --color-fondo: #1e1e2f;
+    --color-fondo-secundario: #2a2a40;
+    --color-tarjeta: #27293d;
+
+    --color-borde: #3d3f58;
+
+    --color-texto: #f1f1f1;
+    --color-texto-suave: #d5dade;
+    --color-texto-secundario: #8b8fa8;
+
+    --color-acento: #0dcaf0;
+
+    --color-exito: #28a745;
+    --color-advertencia: #ffc107;
+    --color-peligro: #dc3545;
+
+    --sombra-tarjeta: rgba(0, 0, 0, 0.35);
+    --sombra-suave: rgba(0, 0, 0, 0.25);
+}
+
+
+body {
+    background: linear-gradient(
+        135deg,
+        var(--color-fondo) 0%,
+        var(--color-fondo-secundario) 100%
+    );
+
+    color: var(--color-texto);
+    min-height: 100vh;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-weight: 800;
+    color: var(--color-texto-suave);
+
+    text-shadow:
+        0 0 10px rgba(13, 202, 240, 0.25);
+}
+
+.card-juego {
+    background-color: var(--color-tarjeta);
+
+    border: 1px solid var(--color-borde);
+    border-radius: 16px;
+
+    box-shadow:
+        0 10px 30px var(--sombra-tarjeta);
+}
+
+.stat-card {
+    background-color: var(--color-fondo);
+
+    border: 1px solid var(--color-borde);
+    border-radius: 12px;
+
+    padding: 12px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 6px 15px var(--sombra-suave);
+}
+
+#input-numero {
+    border: none;
+}
+
+#input-numero:focus {
+    box-shadow: 0 0 0 3px rgba(13, 202, 240, 0.25);
+}
+
+
+.btn-info {
+    background-color: var(--color-acento);
+    border-color: var(--color-acento);
+
+    color: #1e1e2f;
+}
+
+.btn-info:hover {
+    background-color: #0bb5d8;
+    border-color: #0bb5d8;
+    
+
+    color: #1e1e2f;
+}
+
+
+#mensaje-pista {
+    background-color: #343747;
+
+    color: var(--color-texto-suave);
+
+    border: 1px solid var(--color-borde) !important;
+}
+
+.btn-outline-danger {
+    color: var(--color-peligro);
+    border-color: var(--color-peligro);
+}
+
+
+.btn-outline-danger:hover {
+    background-color: var(--color-peligro);
+    border-color: var(--color-peligro);
+
+    color: white;
+}
+
+.ganador-animado {
+    animation: iluminar 0.6s infinite alternate;
+    font-weight: bold;
+}
+
+
+@keyframes iluminar {
+
+    from {
+        background-color: var(--color-exito);
+        color: white;
+        transform: scale(1);
+    }
+
+    to {
+        background-color: var(--color-advertencia);
+        color: black;
+        transform: scale(1.02);
+    }
+}
+}
+
